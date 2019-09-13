@@ -19,8 +19,9 @@ You can make use of the following environment variables / configurations:
 docker run -d --name=speedtest \
 -e INFLUXDB_URL=http://influxdbhost:8086 \
 -e SPEEDTEST_INTERVAL=600 \
--e SPEEDTEST_HOST=Thuis \
+-e SPEEDTEST_HOST=Home \
 skaldenho/speedtest-influx
 ```
 
 This will spin up an instance which will do a speedtest every 10 minutes (600 seconds) and send the results to an influxdb running on host influxdb.
+The SPEEDTEST_HOST variable can be used to differentiate between different locations / hosts from which the test is performed.
