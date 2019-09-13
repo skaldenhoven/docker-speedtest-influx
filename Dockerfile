@@ -1,10 +1,10 @@
 FROM node:8
-MAINTAINER Jonas Friedmann <j@frd.mn>
+MAINTAINER Sander Kaldenhoven
 
 WORKDIR /usr/src/app
 
 ENV INFLUXDB_DB="speedtest" \
-    INFLUXDB_URL="http://10.20.40.1:8086" \
+    INFLUXDB_URL="http://localhost:8086" \
     SPEEDTEST_HOST="local" \
     SPEEDTEST_INTERVAL=3600
 
